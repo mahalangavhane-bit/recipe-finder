@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <h1><i class="fa-solid fa-utensils"></i> Gourmet <span class="highlight">Finder</span></h1>
+            <p>Discover delicious recipes from around the world.</p>
+        </header>
+
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="recipe-name-input" placeholder="Search by Dish Name (e.g. Pasta)...">
+                <button id="search-name-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="divider"><span>OR</span></div>
+            <div class="search-box">
+                <input type="text" id="ingredient-input" placeholder="Search by Ingredient (e.g. Chicken)...">
+                <button id="search-ingredient-btn"><i class="fa-solid fa-carrot"></i></button>
+            </div>
+        </div>
+
+        <div id="results-container" class="results-grid">
+            
+            <div class="empty-state">
+                <i class="fa-solid fa-book-open"></i>
+                <p>Start searching to find recipes!</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="recipe-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modal-body">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js?v=2"></script>
+</body>
+
+</html>
